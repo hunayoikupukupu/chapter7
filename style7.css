@@ -1,0 +1,57 @@
+/*ブラウザがそれぞれ持っているCSSをリセットするための記述*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #6c6b6b;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+.main-visual {
+  width: 100%; /*横幅いっぱい*/
+  height: 400px; /*高さ400px*/
+  background-image: url(img/mv.jpg);
+  background-size: cover; /*縦横比を維持したまま背景領域を埋め尽くす*/
+  background-position: bottom;
+}
+
+.main-visual-content {
+  width: 40%;
+  height: 300px;
+  text-align: left; /*文字を中央揃えにする*/
+  padding: 20px 0 0 20px; /*上側の内側余白で垂直方向の位置を調整*/
+}
+
+.main-visual-text {
+  color: #808080; /*文字色を白に変更*/
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.main {
+  width: 840px;
+  /*display: flex; /*Flexboxの利用*/
+  justify-content: center; /*子要素の横並び・中央寄せ*/
+  margin: 0 auto; /*中央寄せ（左右に余白がないとできない）*/
+  padding: 50px 0; /*上下に70px、左右に0pxの内側余白*/
+}
+
+.web {
+  width: 840px;
+}
+
+.web-box {
+  paddng-top: 50px;
+}
+
+
+.web-item {
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  border-bottom: 3px solid #f7f7f7;
+}
+
